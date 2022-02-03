@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.25rem 0;
+
+  img {
+    width: 100px;
+    height: 30px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 4.125rem;
+    list-style: none;
+
+    li {
+      color: var(--color-secondary);
+      font-size: 1.125rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      font-family: var(--font-inter);
+
+      &::after {
+        display: block;
+
+        content: '';
+        width: 0;
+        height: 2px;
+        background: var(--color-primary);
+        margin: 0.25rem auto 0;
+
+        transition: width 0.4s;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

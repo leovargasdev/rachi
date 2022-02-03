@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.375rem 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    
+    width: 100%;
+    max-width: 574px;
+    margin-bottom: 3.125rem;
+  }
+
+  button {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    color: var(--color-quartenary);
+    
+    width: 200px;
+    height: 56px;
+    border-radius: 50px;
+    background: var(--color-link);
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+
+    transition: filter 0.4s;
+
+    &:hover{
+      filter: brightness(0.95);
+    }
+  }
+}
