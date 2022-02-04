@@ -8,6 +8,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media(max-width: 650px) {
+    height: 342px;
+  }
 }
 
 .container {
@@ -37,6 +41,27 @@
 
     margin-bottom: 6.5rem;
   } 
+
+  @media(max-width: 650px) {
+    justify-content: center;
+    padding: 0;
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      
+      margin-bottom: 0.625rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-width: 270px;
+
+      margin-bottom: 2rem;
+    }
+  }
+
 }
 
 .form {
@@ -52,7 +77,6 @@
     background: transparent;
     color: var(--color-quartenary);
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    // width: 100%;
     width: 300px;
 
     &::placeholder {
@@ -90,5 +114,30 @@
     width: 118px;
     height: 38px;
     border-radius: 50px;
+  }
+
+  @media(max-width: 650px) {
+    width: 100%;
+    flex-direction: column;
+
+    input {
+      font-size: 0.875rem;
+      width: 100%;
+    }
+
+    &::before {
+      top: 34px;
+      width: 100%;
+    }
+
+    button {
+      margin-top: 2rem;
+      font-size: 1rem;
+      line-height: 1rem;
+
+      width: 130px;
+      height: 30px;
+      border-radius: 14px;
+    }
   }
 }

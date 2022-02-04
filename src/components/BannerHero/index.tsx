@@ -6,7 +6,7 @@ export const BannerHero = () => (
       <div className={styles.content}>
         <h1>
           Rachi,
-          <br />é tudo que você precisa em um só lugar.
+          <br /> é tudo que você precisa em um só lugar.
         </h1>
         <button type="button">Cadastrar-se</button>
       </div>

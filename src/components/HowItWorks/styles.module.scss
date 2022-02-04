@@ -10,12 +10,25 @@
     line-height: 3.125rem;
     margin-bottom: 5rem;
   }
+
+  @media(max-width: 768px) {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 8rem;
+
+  @media(max-width: 768px) {
+    column-gap: 2.5rem;
+  }
 
   div {
     display: flex;
@@ -38,6 +51,39 @@
       text-align: center;
       font-size: 1rem;
       line-height: 1.625rem;
+    }
+  }
+
+  @media(max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+
+    div {
+      display: grid;
+      column-gap: 2rem;
+      grid-template-areas: 'icon title' 'icon description';
+
+      img {
+        grid-area: icon;
+      }
+
+      strong {
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: left;
+
+        grid-area: title;
+        margin: 0;
+      }
+
+      p {
+        grid-area: description;
+        text-align: left;
+        // background: blue;
+        max-width: 180px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
     }
   }
 }

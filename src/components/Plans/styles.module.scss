@@ -21,11 +21,26 @@
     width: 100%;
     max-width: 570px;
   }
+
+  @media(max-width: 650px) {
+    padding: 3rem 0 6rem;
+
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 0.625rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
 }
 
 .plans {
   display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.875rem;
 
@@ -43,6 +58,8 @@
   @media(max-width: 650px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+
+    margin-top: 3rem;
   }
 }
 
@@ -145,11 +162,27 @@
   }
 
   @media(max-width: 650px) {
-    min-height: 380px;
+    min-height: 340px;
     padding: 2rem;
 
     h3 {
-      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      line-height: 2.625rem;
+      margin-bottom: 1.5rem;
+
+      small {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+  
+      span {
+        font-size: 1.375rem;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.375rem;
     }
 
     &:hover {
@@ -185,5 +218,11 @@
 
   @media(max-width: 650px) {
     top: 70px;
+
+    width: 140px;
+    height: 18px;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
   }
 }
