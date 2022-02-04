@@ -6,6 +6,7 @@ import { HowItWorks } from 'components/HowItWorks'
 import { BannerApp } from 'components/BannerApp'
 import { Plans } from 'components/Plans'
 import { Contact } from 'components/Contact'
+import { Footer } from 'components/Footer'
 
 import styles from 'styles/home.module.scss'
 
@@ -21,6 +22,7 @@ export default function Home() {
       <BannerApp />
       <Plans />
       <Contact />
+      <Footer />
     </div>
   )
 }
