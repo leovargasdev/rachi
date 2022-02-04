@@ -35,10 +35,7 @@ export const Plans = () => (
 
       <div className={styles.plans}>
         {PLANS_MOCK.map(plan => (
-          <div
-            key={plan.value}
-            className={`${styles.plan} ${plan.moreUsed ? styles.active : ''}`}
-          >
+          <div key={plan.value} className={styles.plan}>
             <strong>{plan.type}</strong>
             {plan.moreUsed && (
               <span className={styles['plan-tag']}>preferido</span>
